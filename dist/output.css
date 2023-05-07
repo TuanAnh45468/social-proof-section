@@ -528,3 +528,16 @@ body {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
