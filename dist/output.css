@@ -529,28 +529,8 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.ml-\[-6px\] {
-  margin-left: -6px;
-}
-
-.block {
-  display: block;
-}
-
-.inline-block {
-  display: inline-block;
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .flex {
@@ -561,10 +541,6 @@ body {
   display: grid;
 }
 
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
@@ -573,16 +549,8 @@ body {
   min-height: 100vh;
 }
 
-.w-\[60px\] {
-  width: 60px;
-}
-
 .w-\[50px\] {
   width: 50px;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -602,30 +570,25 @@ body {
        column-gap: 0.5rem;
 }
 
-.gap-y-5 {
-  row-gap: 1.25rem;
-}
-
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .overflow-hidden {
   overflow: hidden;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
 
-.bg-light-grayish-magenta {
-  --tw-bg-opacity: 1;
-  background-color: hsl(300 24% 96% / var(--tw-bg-opacity));
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-dark-magenta {
@@ -633,21 +596,25 @@ body {
   background-color: hsl(300 43% 22% / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
+.bg-light-grayish-magenta {
+  --tw-bg-opacity: 1;
+  background-color: hsl(300 24% 96% / var(--tw-bg-opacity));
 }
 
 .p-5 {
   padding: 1.25rem;
 }
 
-.text-center {
-  text-align: center;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
@@ -663,14 +630,14 @@ body {
   font-weight: 500;
 }
 
-.text-dark-magenta {
-  --tw-text-opacity: 1;
-  color: hsl(300 43% 22% / var(--tw-text-opacity));
-}
-
 .text-dark-grayish-magenta {
   --tw-text-opacity: 1;
   color: hsl(303 10% 53% / var(--tw-text-opacity));
+}
+
+.text-dark-magenta {
+  --tw-text-opacity: 1;
+  color: hsl(300 43% 22% / var(--tw-text-opacity));
 }
 
 .text-soft-pink {
@@ -692,28 +659,156 @@ body {
     flex-direction: column;
   }
 
-  .mobile\:gap-y-8 {
-    row-gap: 2rem;
-  }
-
-  .mobile\:gap-y-5 {
-    row-gap: 1.25rem;
-  }
-
-  .mobile\:gap-y-4 {
-    row-gap: 1rem;
-  }
-
-  .mobile\:gap-y-3 {
-    row-gap: 0.75rem;
-  }
-
   .mobile\:gap-y-2 {
     row-gap: 0.5rem;
+  }
+
+  .mobile\:gap-y-8 {
+    row-gap: 2rem;
   }
 
   .mobile\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .laptop\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .laptop\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .laptop\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .laptop\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .laptop\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:grid {
+    display: grid;
+  }
+
+  .laptop\:w-\[1110px\] {
+    width: 1110px;
+  }
+
+  .laptop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .laptop\:flex-row {
+    flex-direction: row;
+  }
+
+  .laptop\:flex-col {
+    flex-direction: column;
+  }
+
+  .laptop\:items-center {
+    align-items: center;
+  }
+
+  .laptop\:justify-center {
+    justify-content: center;
+  }
+
+  .laptop\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+
+  .laptop\:gap-y-8 {
+    row-gap: 2rem;
+  }
+
+  .laptop\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+
+  .laptop\:gap-y-0 {
+    row-gap: 0px;
+  }
+
+  .laptop\:self-center {
+    align-self: center;
+  }
+
+  .laptop\:pl-8 {
+    padding-left: 2rem;
+  }
+
+  .laptop\:pl-10 {
+    padding-left: 2.5rem;
+  }
+
+  .laptop\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .laptop\:pl-40 {
+    padding-left: 10rem;
+  }
+
+  .laptop\:pl-80 {
+    padding-left: 20rem;
+  }
+
+  .laptop\:pl-20 {
+    padding-left: 5rem;
+  }
+
+  .laptop\:pl-12 {
+    padding-left: 3rem;
+  }
+
+  .laptop\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .laptop\:pl-48 {
+    padding-left: 12rem;
+  }
+
+  .laptop\:pl-32 {
+    padding-left: 8rem;
+  }
+
+  .laptop\:text-left {
+    text-align: left;
+  }
+
+  .laptop\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .laptop\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .laptop\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .laptop\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
